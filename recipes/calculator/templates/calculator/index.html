@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Рецепты</title>
+</head>
+<body>
+    <h2>В нашем меню:</h2>
+    {% for dish in dishes %}
+        <p>{{ dish }}: введите " /{{ dish }} " что бы узнать ингридиенты на одну порцию/
+            или /{{ dish }}/?servings=2 на 2 и более. </p>
+
+    {% endfor %}
+</body>
